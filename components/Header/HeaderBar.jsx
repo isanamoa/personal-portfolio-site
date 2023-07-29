@@ -5,9 +5,7 @@ import Social from "../Reusables/Social";
 const HeaderBar = () => {
   return (
     <AppBar sx={{ mb:2 }}>
-        <Container sx={{ display: 'flex', 
-            width: {sm: '85%'}, px: 2,
-            bgcolor: 'green' }} 
+        <Container className="md:container mx-auto flex px-2 md:px-0"
             maxWidth={false} 
             disableGutters
             >

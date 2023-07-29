@@ -19,7 +19,7 @@ const Footer = () => {
         <InputForm displayForm={displayForm} />
       </Box>
 
-      <Box className="md:container mx-auto flex  items-center justify-between py-5">
+      <Box className="md:container mx-auto flex  items-center justify-between py-5 px-2 md:px-0">
         <AboutUs />
         <Social />
       </Box>

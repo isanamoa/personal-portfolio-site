@@ -10,13 +10,14 @@ const MainView = () => {
         <Typography variant="h2" className="py-1 text-2xl font-semibold underline">
           PROJECTS
         </Typography>
-        <Grid className="grid-cols-1 sm:grid-cols-2 md:grid-cols-2 items-center justify-center gap-5">
+        {/** grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 */}
+        <Box className="flex flex-col sm:flex-row sm:flex-wrap items-center justify-between gap-3">
           
             <PreviewCard />
             <PreviewCard />
             <PreviewCard />
         
-        </Grid>
+        </Box>
       </Box>
     </Paper>
   )

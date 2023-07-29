@@ -6,55 +6,36 @@ const PreviewBody = () => {
     
   return (
     <>
-        <Carousel className=''>
+        <Carousel className='w-full'>
             <Image
                 alt="..."
-                src="/assets/countryApi-dark-desk.png"
+                src="/assets/project-pics/countryApi-dark-desk.png"
                 width={200}
                 height={200}
+                className='w-full'
             />
             <Image
                 alt="..."
-                src="/assets/countryApi-light-desk.png"
+                src="/assets/project-pics/countryApi-light-desk.png"
                 width={200}
                 height={200}
+                className='w-full'
             />
             <Image
                 alt="..."
-                src="/assets/countryApi-dark-mobile.png"
+                src="/assets/project-pics/countryApi-details-desk-dark.png"
                 width={200}
                 height={200}
+                className='w-full'
             />
             <Image
                 alt="..."
-                src="/assets/countryApi-light-mobile.png"
+                src="/assets/project-pics/countryApi-details-desk-light.png"
                 width={200}
                 height={200}
+                className='w-full'
             />
-            <Image
-                alt="..."
-                src="/assets/countryApi-details-desk-dark.png"
-                width={200}
-                height={200}
-            />
-            <Image
-                alt="..."
-                src="/assets/countryApi-details-desk-light.png"
-                width={200}
-                height={200}
-            />
-            <Image
-                alt="..."
-                src="/assets/countryApi-details-mobile-dark.png"
-                width={200}
-                height={200}
-            />
-            <Image
-                alt="..."
-                src="/assets/countryApi-details-mobile-light.png"
-                width={200}
-                height={200}
-            />
+            
         </Carousel>
     </>
   )

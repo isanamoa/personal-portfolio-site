@@ -7,7 +7,7 @@ const PreviewTitle = () => {
   return (
     <Box className='p-2 text-sm'>
         <Typography variant="h3" className='text-lg font-bold my-3'>Title</Typography>
-        <Box className='flex items-center justify-between gap-1 '>
+        <Box className='flex items-center justify-between flex-wrap gap-1 text-sm'>
             <Typography className="p-2">HTML </Typography>|
             <Typography className="p-2">CSS </Typography>|
             <Typography className="p-2">JavaScript</Typography>|
