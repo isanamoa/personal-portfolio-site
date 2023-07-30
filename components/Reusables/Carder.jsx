@@ -1,29 +1,44 @@
 import React from 'react'
-import { Box, Card, CardActions, CardContent, Typography } from '@mui/material'
+import { Box, CardContent, Typography } from '@mui/material'
 import Link from 'next/link'
 import { ArrowForward } from '@mui/icons-material'
 
-const Carder = ({ title, content }) => {
+const Carder = ({ icon, title, content }) => {
 
   return (
     <Box sx={{ width: 1 }} >
-        <CardContent>
+        <CardContent className='mb-1'>
+            <Box className='flex gap-3 justify-between items-center'>
+                <Typography 
+                    gutterBottom 
+                    variant="h5" 
+                    component="div"
+                    className='font-bold'>
+                    {title}
+                </Typography>
+                <Box className="bg-green-800 p-1">
+                    {icon}
+                </Box>
+            </Box>
             <Typography 
-                gutterBottom 
-                variant="h5" 
-                component="div"
-                className='font-bold'>
-                {title}
-            </Typography>
-            <Typography variant="body2" color="text.secondary">
+                    variant="body2" 
+                    color="text.secondary"
+                    component="div"
+                    sx={{ height: "30vh" }}
+                >
                 {content}
             </Typography>
         </CardContent>
-        <CardActions sx={{ pl:2 }}>
-            <Link href="" > 
-                Read More <ArrowForward size="small" />
-            </Link>
-        </CardActions>
+            
+        {
+            /**
+             * <CardActions sx={{ pl:2 }}>
+                    <Link href="" > 
+                        Read More <ArrowForward size="small" />
+                    </Link>
+                </CardActions>
+             */
+        }
     </Box>
   )
 }

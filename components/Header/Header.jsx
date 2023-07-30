@@ -5,7 +5,7 @@ import HeaderMain from "./HeaderMain";
 
 const Header = () => {
     return (
-      <Box>
+      <Box sx={{ mb: 4}}>
         <HeaderBar />
         <HeaderMain />   
       </Box>

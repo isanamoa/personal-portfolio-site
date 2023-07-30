@@ -1,4 +1,6 @@
+import { Html } from "@mui/icons-material"
 import { Box, Typography } from "@mui/material"
+import SkillLevel from "./SkillLevel"
 
 const SkillSet = () => {
   return (
@@ -8,25 +10,57 @@ const SkillSet = () => {
             SKILLS
         </Typography>
         <Box className="flex flex-col gap-6 py-2">
-            <Box className="shadow-xl p-4 rounded-md bg-red-100">
+            <Box className="shadow-xl p-4 rounded-md">
                 <Typography variant="h3" className="text-xl font-bold pb-2">Frontend</Typography>
-                <Box className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 justify-center items-center sm:justify-evenly gap-5 py-5">
-                    <Box>
-                        <Typography variant="h4" className="text-lg pb-2 font-bold">HTML</Typography>
-                        <Typography variant="body2" className="font-thin">3 Years Experience</Typography>
-                    </Box>
-                    <Box>
-                        <Typography variant="h4" className="text-lg pb-2 font-bold">CSS</Typography>
-                        <Typography variant="body2" className="font-thin">3 Years Experience</Typography>
-                    </Box>
-                    <Box>
-                        <Typography variant="h4" className="text-lg pb-2 font-bold">JavaScript</Typography>
-                        <Typography variant="body2" className="font-thin">3 Years Experience</Typography>
-                    </Box>
-                    <Box>
-                        <Typography variant="h4" className="text-lg pb-2 font-bold">React</Typography>
-                        <Typography variant="body2" className="font-thin">3 Years Experience</Typography>
-                    </Box>
+                <Box className="flex flex-col sm:grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 
+                    justify-center items-center sm:justify-evenly gap-5 py-5">
+                    
+                    {
+                        {
+                            frontend: [
+                                {
+                                    name: 'HTML',
+                                    level: 90,
+                                    experience: "5 years experience"
+                                },
+                                {
+                                    name: 'CSS',
+                                    level: 70,
+                                    experience: "5 years experience"
+                                },
+                                {
+                                    name: 'JavaScript',
+                                    level: 70,
+                                    experience: "5 years experience"
+                                },
+                                {
+                                    name: 'React',
+                                    level: 70,
+                                    experience: "3 years experience"
+                                },
+                                {
+                                    name: 'Responsive Design',
+                                    level: 85,
+                                    experience: "3 years experience"
+                                },
+                            ],
+                        }.frontend.map((skill, index) => (
+                            <Box key={index} className="flex flex-col justify-center items-center">
+                                <Typography variant="h5" 
+                                    className="text-lg pb-2 font-bold"
+                                >
+                                    {skill.name}
+                                </Typography>
+                                    <SkillLevel level={skill.level} />
+                                <Typography variant="body2" 
+                                    className="font-thin text-sm"
+                                >
+                                    {skill.experience}
+                                </Typography>
+                            </Box>
+                        ))
+                    }
+
                 </Box>
             </Box>
         </Box>
