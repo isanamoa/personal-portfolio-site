@@ -2,8 +2,8 @@ import { Box, Typography } from "@mui/material";
 
 const AboutUs = () => {
   return (
-    <Box className="flex-1 flex">
-      <Typography variant="h2" className="text-2xl font-bold" >
+    <Box className="mb-2 sm:mb-0">
+      <Typography variant="h4" className="text-xl font-bold" >
         isanamoa
       </Typography>
     </Box>

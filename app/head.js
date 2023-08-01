@@ -5,6 +5,7 @@ const head = ({title, icons}) => {
     <>
         <title>{title}</title> 
         <link rel='shortcut icon' href={icons} type='image/x-icon' />
+        
     </>
   )
 }

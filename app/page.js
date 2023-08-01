@@ -11,6 +11,11 @@ const darkTheme = createTheme({
   palette: {
     mode: 'dark',
   },
+  typography: {
+    fontFamily: [
+      'Space Grotesk',
+      ],
+  },
 });
 
 

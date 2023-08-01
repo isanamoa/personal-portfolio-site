@@ -34,24 +34,36 @@ const SkillSet = () => {
                                     experience: "5 years experience"
                                 },
                                 {
-                                    name: 'React',
-                                    level: 70,
-                                    experience: "3 years experience"
-                                },
-                                {
                                     name: 'Responsive Design',
                                     level: 85,
-                                    experience: "3 years experience"
+                                    experience: "4 years experience"
+                                },
+                                {
+                                    name: 'React',
+                                    level: 70,
+                                    experience: "2 years experience"
+                                },
+                                {
+                                    name: 'Tailwind',
+                                    level: 85,
+                                    experience: "2 years experience"
+                                },
+                                {
+                                    name: 'Material UI',
+                                    level: 85,
+                                    experience: "2 years experience"
                                 },
                             ],
                         }.frontend.map((skill, index) => (
-                            <Box key={index} className="flex flex-col justify-center items-center">
+                            <Box key={index} className="flex flex-col justify-center items-center sm:justify-start">
                                 <Typography variant="h5" 
-                                    className="text-lg pb-2 font-bold"
+                                    className="text-3xl pb-2 font-bold"
                                 >
                                     {skill.name}
                                 </Typography>
-                                    <SkillLevel level={skill.level} />
+                                    {/**
+                                     * <SkillLevel level={skill.level} />
+                                     */}
                                 <Typography variant="body2" 
                                     className="font-thin text-sm"
                                 >
