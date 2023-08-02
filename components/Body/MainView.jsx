@@ -11,7 +11,7 @@ const MainView = () => {
           PROJECTS
         </Typography>
         {/** grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 */}
-        <Box className="flex flex-col sm:flex-row sm:flex-wrap items-center justify-between gap-3">
+        <Box className="flex flex-col sm:flex-row sm:flex-wrap items-center justify-center gap-3">
             {
               [
                 {

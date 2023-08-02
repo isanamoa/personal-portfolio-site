@@ -24,7 +24,7 @@ const Carder = ({ icon, title, content }) => {
                     variant="body2" 
                     color="text.secondary"
                     component="div"
-                    sx={{ height: {xs: "40vh", md: "30vh"}, fontSize: 18 }}
+                    sx={{ minHeight: {xs: "50vh", md: "40vh"}, fontSize: 18 }}
                 >
                 {content}
             </Typography>

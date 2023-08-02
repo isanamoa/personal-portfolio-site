@@ -17,7 +17,7 @@ const SkillSet = () => {
                     
                     {
                         {
-                            frontend: [
+                            "frontend": [
                                 {
                                     name: 'HTML',
                                     level: 90,
@@ -32,11 +32,6 @@ const SkillSet = () => {
                                     name: 'JavaScript',
                                     level: 70,
                                     experience: "5 years experience"
-                                },
-                                {
-                                    name: 'Responsive Design',
-                                    level: 85,
-                                    experience: "4 years experience"
                                 },
                                 {
                                     name: 'React',

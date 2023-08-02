@@ -8,15 +8,16 @@ import * as MyIconsColl from '../MyIcons';
 const HeaderMain = () => {
   return (
     <Paper 
-        className="md:container mx-auto mt-20 sm:mt-16 mb-3 flex flex-col md:flex-row px-5 py-1 gap-5"
+        className="md:container mx-auto mt-20 sm:mt-16 mb-3 flex flex-col items-center justify-center
+            md:items-start md:justify-between md:flex-row px-5 py-1 gap-y-5 sm:gap-7"
         >
-        <Box sx={{ flex: 1 }} className="flex gap-5">
-            <Box className="relative">
+        <Box className="md:w-1/2 flex gap-y-5 sm:gap-0">
+            <Box className="">
                 <Avatar 
                     alt="isanamoa" 
                     src="/assets/images/isanamoa1.jpg" 
                     variant="rounded"
-                    sx={{ width: "25rem", height: '60vh' }}
+                    sx={{ width: {xs: '22rem', sm:"25rem"}, height: { xs:'60vh', md: '45vh'} }}
                 />
                 <Box>
                     <Typography variant="h4" className="font-bold text-4xl"> 
@@ -34,7 +35,7 @@ const HeaderMain = () => {
                 </Box>
             </Box>
         </Box>
-        <Box sx={{ flex: 1, bgcolor: 'bg-green-200', }}>
+        <Box sx={{ width: {xs: 1, md: 1/2  }, bgcolor: 'bg-green-200', }}>
             <Carousel >
                 {
                     [
