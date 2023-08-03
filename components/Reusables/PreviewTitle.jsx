@@ -5,7 +5,7 @@ const PreviewTitle = ({ projectTitle }) => {
   
   return (
     <Box className='p-2 text-sm mt-8'>
-        <Typography variant="h3" className='text-lg font-bold my-2'>{projectTitle.title}</Typography>
+        <Typography variant="h5" className='text-lg font-bold my-2'>{projectTitle.title}</Typography>
         <Box className='flex items-center justify-start flex-wrap gap-1 text-sm'>
             {
               projectTitle.dependency.map((value, index) =>(

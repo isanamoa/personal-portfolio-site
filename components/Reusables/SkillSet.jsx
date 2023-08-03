@@ -9,7 +9,7 @@ const SkillSet = () => {
         <Box className="flex flex-col gap-6 py-1">
             <Box className="shadow-xl p-4 rounded-md">
                 <Box className="flex flex-col sm:grid sm:grid-cols-2 
-                    md:grid-cols-3 lg:grid-cols-4 justify-center items-center sm:justify-evenly gap-x-5 gap-y-10 py-1">
+                    md:grid-cols-3 justify-center items-center sm:items-start sm:justify-between gap-x-5 gap-y-10 py-1">
                     
                     {
                         {
@@ -46,7 +46,7 @@ const SkillSet = () => {
                                 },
                             ],
                         }.frontend.map((skill, index) => (
-                            <Box key={index} className="flex flex-col justify-center items-center sm:justify-start">
+                            <Box key={index} className="flex flex-col justify-center items-center sm:justify-items-start">
                                 <Typography variant="h5" 
                                     className="text-3xl pb-2 font-bold"
                                 >

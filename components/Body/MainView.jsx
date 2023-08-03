@@ -1,15 +1,21 @@
-import { Box, Grid, Paper, Typography } from "@mui/material";
+import { Box, Button, Typography } from "@mui/material";
 import PreviewCard from "../Reusables/PreviewCard";
 import SkillSet from "../Reusables/SkillSet";
 
 const MainView = () => {
   return (
-    <Box className="md:container mx-auto mb-7">
+    <Box className="lg:w-[75rem] mx-auto mb-7">
       <SkillSet />
       <Box className="py-5 px-10 sm:px-2 md:px-10">
-        <Typography variant="h2" className="py-1 text-2xl font-semibold underline">
-          PROJECTS
-        </Typography>
+        <Box className="flex items-center justify-between">
+          <Typography variant="h4" className="py-1 text-2xl font-semibold underline">
+            PROJECTS
+          </Typography>
+          <Button  className="hidden sm:block mt-7 bg-transparent border-b-2 
+              border-b-teal-500 rounded-none text-white">
+              CONTACT ME
+          </Button>
+        </Box>
         {/** grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 */}
         <Box className="flex flex-col sm:flex-row sm:flex-wrap items-center justify-between gap-3">
             {
@@ -56,7 +62,7 @@ const MainView = () => {
                 },
                 {
                   title: 'FLYO Landing Page',
-                  dependency: ['JavaScript', 'Tailwind', 'React', 'Vite'],
+                  dependency: ['JavaScript', 'Tailwind', 'React',],
                   projectLink: "https://isanamoa.github.io/flyo_landing_page/",
                   projectCode: "https://github.com/isanamoa/flyo_landing_page",
                   projectImages: [
