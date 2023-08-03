@@ -5,19 +5,15 @@ import SkillLevel from "./SkillLevel"
 const SkillSet = () => {
   return (
 
-    <Box sx={{ py:5, px: { xs:5, sm:2, md:5 } }} >        
-        <Typography variant="h2" className="text-2xl font-bold underline pb-3">
-            SKILLS
-        </Typography>
-        <Box className="flex flex-col gap-6 py-2">
+    <Box sx={{ py:3, px: { xs:5, sm:2, md:5 } }} className="border-t-2 border-b-2 sm:border-b-0 border-y-white">        
+        <Box className="flex flex-col gap-6 py-1">
             <Box className="shadow-xl p-4 rounded-md">
-                <Typography variant="h3" className="text-xl font-bold pb-2">Frontend</Typography>
-                <Box className="flex flex-col sm:grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 
-                    justify-center items-center sm:justify-evenly gap-5 py-5">
+                <Box className="flex flex-col sm:grid sm:grid-cols-2 
+                    md:grid-cols-3 lg:grid-cols-4 justify-center items-center sm:justify-evenly gap-x-5 gap-y-10 py-1">
                     
                     {
                         {
-                            "frontend": [
+                            frontend: [
                                 {
                                     name: 'HTML',
                                     level: 90,
@@ -36,12 +32,12 @@ const SkillSet = () => {
                                 {
                                     name: 'React',
                                     level: 70,
-                                    experience: "2 years experience"
+                                    experience: "3 years experience"
                                 },
                                 {
                                     name: 'Tailwind',
                                     level: 85,
-                                    experience: "2 years experience"
+                                    experience: "3 years experience"
                                 },
                                 {
                                     name: 'Material UI',

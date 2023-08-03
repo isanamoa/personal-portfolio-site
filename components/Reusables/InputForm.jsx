@@ -1,13 +1,13 @@
 import { Box, Button, TextField } from "@mui/material"
 
-const InputForm = ({ displayForm }) => {
+const InputForm = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log('Form is active')
   }
 
   return (
-    <Box className={displayForm ? "w-full px-10 sm:px-0 sm:w-[50%] lg:w-[40%] flex flex-col gap-4 justify-around sm:justify-center": 'hidden'}>
+    <Box className="w-full px-10 sm:px-0 sm:w-[50%] lg:w-[40%] flex flex-col gap-4 justify-around sm:justify-center">
       {/**
        * `${displayForm ? "w-full px-10 sm:px-0 sm:w-[50%] lg:w-[40%] flex flex-col gap-4 justify-around sm:justify-center": 'hidden'}`
        */}

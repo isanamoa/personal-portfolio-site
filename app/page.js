@@ -24,7 +24,7 @@ const Home = () => {
   return (
     <ThemeProvider theme={darkTheme}>
       <CssBaseline />
-      <Box className="min-h-scree">
+      <Box className="min-h-screen">
         <Header />
         <MainView />
         <Footer />

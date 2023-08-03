@@ -1,76 +1,47 @@
-import { AppBar, Avatar, Box, Container, Paper, Typography } from "@mui/material";
-import Carder from "../Reusables/Carder";
-import Carousel from "react-material-ui-carousel";
+import {  Avatar, Box,  Button, Typography } from "@mui/material";
 import Typist from "react-typist-component";
-import * as MyIconsColl from '../MyIcons';
-
 
 const HeaderMain = () => {
   return (
-    <Paper 
-        className="md:container mx-auto mt-20 sm:mt-16 mb-3 flex flex-col items-center justify-center
-            md:items-start md:justify-between md:flex-row px-5 py-1 gap-y-5 sm:gap-7"
+    <Box 
+        className="md:container mx-auto mb-3 flex flex-col-reverse items-start justify-center
+            md:items-start sm:justify-between sm:flex-row pl-5 pt-0 gap-y-5"
         >
-        <Box className="md:w-1/2 flex gap-y-5 sm:gap-0">
-            <Box className="">
-                <Avatar 
-                    alt="isanamoa" 
-                    src="/assets/images/isanamoa1.jpg" 
-                    variant="rounded"
-                    sx={{ width: {xs: '22rem', sm:"25rem"}, height: { xs:'60vh', md: '45vh'} }}
-                />
-                <Box>
-                    <Typography variant="h4" className="font-bold text-4xl"> 
-                        Nana Ansah Yanney
+        <Box className="w-full sm:w-1/2 md:w-3/4 sm:mt-16 flex flex-col items-center justify-center
+                 sm:flex-row sm:justify-between sm:items-start">
+
+            <Typography variant="h5" className="sm:absolute text-3xl font-bold sm:text-4xl md:text-6xl lg:text-7xl z-10 whitespace-nowrap"> 
+                Nice to meet you! <br /> 
+                I’m <span className="pb-1 border-b-2 border-b-green-400">Nana Ansah</span>.
+            </Typography>
+            <Box className="sm:mt-10 md:mt-16 lg:mt-24">
+                <Typist 
+                    typingDelay={300} 
+                    cursor={<span className='cursor'>|</span>}
+                    onTypingDone={false}
+                    >
+                    <Typography variant="body1" className="text-center sm:text-left font-semibold mt-5 sm:mt-20">
+                        Based in Ghana, I’m a front-end developer <br /> 
+                        passionate about building accessible web apps <br />
+                        that users love.
                     </Typography>
-                    <Typist 
-                        typingDelay={300} 
-                        cursor={<span className='cursor'>|</span>}
-                        onTypingDone={false}
-                        >
-                        <Typography variant="body2" className="font-semibold">
-                            Software Developer
-                        </Typography>
-                    </Typist>
-                </Box>
+                </Typist>
+                <Button  className="mt-7 bg-transparent border-b-2 
+                border-b-teal-500 rounded-none text-white">
+                CONTACT ME
+                </Button>
             </Box>
         </Box>
-        <Box sx={{ width: {xs: 1, md: 1/2  }, bgcolor: 'bg-green-200', }}>
-            <Carousel >
-                {
-                    [
-                        {
-                            icon: <MyIconsColl.Brush />,
-                            title:"Profile",
-                            content: `A skilled frontend developer with over 3 years of experience building responsive and 
-                            user-friendly interfaces for websites and applications. Proficient in HTML, CSS, and JavaScript, 
-                            and has experience working with popular libraries such as React and Vue, and frontend frameworks such as Next. 
-                            Have strong desire for web performance optimization and always look for ways to improve the speed and efficiency of my codes. 
-                            Good collaborator and communicator, with the capacity to work both under pressure and stress-free environment to achieve project targets.`
-                        }, 
-                        {
-                            icon: <MyIconsColl.Lightbulb />,
-                            title:"Inspiration",
-                            content: "The love of God through creation"
-                        },
-                        {
-                            icon: <MyIconsColl.FormatQuote />,
-                            title:"Quotes",
-                            content: "Nothing is done without a start and a try"
-                        },
-
-                    ]
-                    .map((cards, index) => (
-                        <Carder key={index}
-                            icon={cards.icon}
-                            title={cards.title} 
-                            content={cards.content}
-                        />
-                    ))
-                }
-            </Carousel>
+        <Box className="w-full sm:w-1/2 md:w-1/4 flex flex-col items-center justify-center filter grayscale pt-20 sm:pt-16 sm:bg-[#242424]">
+            <Avatar 
+                alt="isanamoa" 
+                src="/assets/images/isanamoa1.jpg" 
+                variant="square"
+                sx={{ position: 'relative', border: 'none', width: {xs: '15rem', md:"19.5rem"}, height: { xs:'350px', md: '370px'} }}
+                className="sm:w-full"
+            />
         </Box>
-    </Paper>
+    </Box>
   )
 }
 
